@@ -1,0 +1,223 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: gray;
+    display: inline-block;
+    list-style: none;
+    margin: 0 1%;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+
+form {
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.botonform {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+h1{
+    padding-top: 20px;
+}
+
+.opcionesExplorar{
+        padding: 10px;
+    margin: 20px;
+} */
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding:20px 2% ;
+    border-bottom: 1px solid black;
+
+    /* Position */
+    top: 0;
+    height: 30px;
+}
+
+li a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navLink li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.botonContacto {
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #b88e2f;
+}
+
+/* Enlace a WhatsApp */
+
+.whatsapp {
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    background-color: green;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* BANNER */
+
+.banner {
+    background-image: url("../img/Banner.png");
+    background-size: cover;
+    height: calc(100vh - 100px);
+    padding: 50px;
+    
+}
+
+/* Contenedor de Banner */
+
+.contenedorBanner {
+    border-radius: 4px;
+    height: 400px;
+    width: 450px;
+    margin: 30px;
+    padding: 20px;
+
+    left: 53%;
+    top: 30%;
+    position: absolute;
+    /* Centramos de forma simple */
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; */
+    /******************************/
+    /* ctrl + k + u */
+    background-color: #fff3e3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    max-width: 90%;
+}
+
+h1 {
+    font-weight:bold;
+    color: #b88e2f;
+}
+
+.botonComprar {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 20px 35px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #b88e2f;
+}
+
+/*Desarrollamos nuestro catalogo de cursos con grid y flex*/
+
+/*CARDS*/
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} 
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.productoImagen {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.productoTitulo {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
