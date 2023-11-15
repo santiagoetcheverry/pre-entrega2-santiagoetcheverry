@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniro</title>
+
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css">
 
@@ -14,7 +19,49 @@
 
 
     <header>
-        <img class="logo" src="img/Logo Furniro.png" alt="Logo de Furniro">
+
+        <nav class="navbar navbar-expand-lg encabezado">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Furniro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Explorar</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tienda
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dormitorios</a></li>
+                                <li><a class="dropdown-item" href="#">Baños</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Más opciones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Acerca De</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success botonBuscar" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <img class="logo" src="img/Logo Furniro.png" alt="Logo de Furniro">
 
         <nav>
             <ul class="navLink">
@@ -25,7 +72,7 @@
             </ul>
         </nav>
 
-        <a class="botonContacto" href="html/contacto.html">Contacto</a> 
+        <a class="botonContacto" href="html/contacto.html">Contacto</a> -->
     </header>
 
 
@@ -34,7 +81,8 @@
     <div class="banner">
         <div class="contenedorBanner">
             <h1>Descubre nuestra nueva colección</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, alias ratione, ipsum sit unde, iure
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, alias ratione, ipsum sit unde,
+                iure
                 animi labore sed non repellat dicta cum voluptates excepturi placeat illo accusamus quos rem quasi!</p>
             <a class="botonComprar" href="">Comprar ahora</a>
         </div>
@@ -48,42 +96,54 @@
         <img class="whatsapp" src="img/WhatsApp.png" alt="Logo de WhatsApp">
     </div>
 
-<!-- CURSOS -->
+    <!-- CARDS -->
 
-        <h2>Explora nuestra selección exclusiva</h2>
-        
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate non vel ab sequi eveniet dolorum sapiente tempore cupiditate nam, illo sit obcaecati optio quam voluptatem ex aliquid saepe dolorem libero.</p>
+    <h2>Explora nuestra selección exclusiva</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate non vel ab sequi eveniet dolorum sapiente
+        tempore cupiditate nam, illo sit obcaecati optio quam voluptatem ex aliquid saepe dolorem libero.</p>
+
+    <main class="row contenedorProductos">
+        <div class="card col-xl-3 col-md-6 col-sm-12">
+            <img src="img/Foto comedor.png" class="productoImagen" alt="Comedor">
+            <div class="card-body">
+                <h5 class="text-center">Comedor</h5>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-md-6 col-sm-12">
+            <img src="img/Foto dormitorio.png" class="card-img-top" alt="Dormitorio">
+            <div class="card-body">
+                <h5 class="text-center">Dormitorio</h5>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-md-6 col-sm-12">
+            <img src="img/Foto Living.png" class="card-img-top" alt="Living">
+            <div class="card-body">
+                <h5 class="text-center">Living</h5>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-md-6 col-sm-12">
+            <img src="img/Foto comedor.png" class="card-img-top" alt="Baño">
+            <div class="card-body">
+                <h5 class="text-center">Baño</h5>
+            </div>
+        </div>
+    </main>
 
 
-<main class="contenedorProductos">
+    <footer>
+        <h3>Furniro - Todos los derechos reservados</h3>
+        <p>Aviso legal</p>
+        <p>Condiciones generales</p>
+        <p>Politica de privacidad</p>
+    </footer>
 
-    <div class="producto">
-        <img class="productoImagen" src="img/Foto comedor.png" alt="Comedor">
-        <h3 class="productoTitulo"> Comedor </h3>
-    </div>
-
-    <div class="producto">
-        <img class="productoImagen" src="img/Foto Living.png" alt="Living">
-        <h3 class="productoTitulo"> Living </h3>
-    </div>
-
-    <div class="producto">
-        <img class="productoImagen" src="img/Foto dormitorio.png" alt="Dormitorio">
-        <h3 class="productoTitulo"> Dormitorio </h3>
-    </div>
-
-</main>
-
-
-<footer>
-    <h3>Furniro - Todos los derechos reservados</h3>
-    <p>Aviso legal</p>
-    <p>Condiciones generales</p>
-    <p>Politica de privacidad</p>
-</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-

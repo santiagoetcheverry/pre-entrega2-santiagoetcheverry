@@ -81,22 +81,19 @@ body {
 .logo {
     width: 150px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding:20px 2% ;
+    padding:10px 2% ;
     border-bottom: 1px solid black;
-
-    /* Position */
-    top: 0;
-    height: 30px;
 }
 
-li a {
+.encabezado {
+    background-color: white;
+} 
+
+a {
     color: black;
     font-size: 16px;
     font-weight: bold;
@@ -104,22 +101,19 @@ li a {
     list-style: none;
 }
 
-.navLink li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.botonContacto {
+.botonBuscar {
     text-decoration: none;
     font-size: 16px;
-    letter-spacing: 1px;
     font-weight: bold;
-    display: inline-block;
-    padding: 10px 32px;
     border-radius: 50px;
+    padding-left: 20px ;
+    padding-right: 20px;
+    border: none;
     color: #fff;
     background-color: #b88e2f;
 }
+
+boton
 
 /* Enlace a WhatsApp */
 
@@ -153,7 +147,7 @@ li a {
     padding: 20px;
 
     left: 53%;
-    top: 30%;
+    top: 15%;
     position: absolute;
     /* Centramos de forma simple */
     /* top: 0;
@@ -196,21 +190,27 @@ h1 {
 
 /*CARDS*/
 
+h2 {
+    font-weight:bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
 .contenedorProductos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
 } 
 
-.producto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+.card {
+    border: none;
+}
+
+.productos {
+    padding: 10px;
+    height: 300px;
+    width: 300px;
 }
 
 .productoImagen {
-    width: 100%;
-    height: 450px;
     object-fit: contain;
     cursor: pointer;
 }
