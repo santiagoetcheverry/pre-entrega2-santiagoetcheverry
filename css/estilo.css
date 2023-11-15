@@ -76,6 +76,7 @@ h1{
 
 body {
     font-family: 'Poppins', sans-serif;
+
 }
 
 .logo {
@@ -85,13 +86,13 @@ body {
 }
 
 header {
-    padding:10px 2% ;
+    padding: 10px 2%;
     border-bottom: 1px solid black;
 }
 
 .encabezado {
     background-color: white;
-} 
+}
 
 a {
     color: black;
@@ -103,7 +104,7 @@ a {
     font-size: 16px;
     font-weight: bold;
     border-radius: 50px;
-    padding-left: 20px ;
+    padding-left: 20px;
     padding-right: 20px;
     border: none;
     color: #fff;
@@ -113,6 +114,9 @@ a {
 .botonBuscar:hover {
     background-color: #84611a;
 }
+
+
+/* CSS DE INDEX.HTML */
 
 /* BANNER */
 
@@ -132,14 +136,14 @@ a {
     background-size: cover;
     height: calc(100vh - 100px);
     padding: 50px;
-    
+
 }
 
 /* Contenedor de Banner */
 
 .contenedorBanner {
     border-radius: 4px;
-    height: 400px;
+    height: 600px;
     width: 500px;
     margin: 30px;
     padding: 20px;
@@ -150,8 +154,8 @@ a {
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 20px;
-    margin-right: 10px;
+    margin-top: 70px;
+    margin-right: 70px;
     /******************************/
     /* ctrl + k + u */
     background-color: #fff3e3;
@@ -166,17 +170,18 @@ a {
 }
 
 h1 {
-    font-weight:bold;
+    font-weight: bold;
     color: #b88e2f;
+    font-size: 40px;
 }
 
-.botonComprar {
+.botonComprarAhora {
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 20px 35px;
+    padding: 20px 65px;
     font-weight: bold;
     border-radius: 4px;
     color: #fff;
@@ -187,14 +192,15 @@ h1 {
 /*CARDS*/
 
 h2 {
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
     margin-top: 30px;
+    font-size: 24px;
 }
 
 .contenedorProductos {
     margin: 20px;
-} 
+}
 
 .card {
     border: none;
@@ -208,4 +214,56 @@ h2 {
 h5 {
     font-size: 16px;
     font-weight: bold;
+}
+
+
+/* CSS DE TIENDA.HTML */
+
+.bannerTienda {
+    background-image: url("../img/Banner\ tienda.png");
+    background-size: cover;
+    height: 400px;
+
+}
+
+.tituloTienda {
+    text-align: center;
+    padding-top: 160px;
+}
+
+
+.h1Muebles {
+    color: black;
+    font-weight: bold;
+}
+
+.productoMueble {
+    margin: 45px;
+}
+
+.cardMueble {
+    width: 450px;
+}
+
+.h2Mueble {
+    margin-bottom: 40px;
+    color: #b88e2f;
+    font-weight: normal;
+}
+
+
+.botonComprar {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: none;
+    color: #fff;
+    background-color: #b88e2f;
+}
+
+.botonComprar:hover {
+    background-color: #84611a;
 }
