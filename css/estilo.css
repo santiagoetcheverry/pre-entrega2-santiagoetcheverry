@@ -81,7 +81,7 @@ body {
 .logo {
     width: 150px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-right: 30px;
 }
 
 header {
@@ -95,10 +95,7 @@ header {
 
 a {
     color: black;
-    font-size: 16px;
     font-weight: bold;
-    text-decoration: none;
-    list-style: none;
 }
 
 .botonBuscar {
@@ -113,18 +110,8 @@ a {
     background-color: #b88e2f;
 }
 
-boton
-
-/* Enlace a WhatsApp */
-
-.whatsapp {
-    width: 70px;
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-    background-color: green;
-    border-radius: 50px;
-    cursor: pointer;
+.botonBuscar:hover {
+    background-color: #84611a;
 }
 
 /* BANNER */
@@ -149,7 +136,7 @@ boton
     left: 53%;
     top: 15%;
     position: absolute;
-    /* Centramos de forma simple */
+    /* Centrado de forma simple */
     /* top: 0;
     bottom: 0;
     left: 0;
@@ -186,7 +173,6 @@ h1 {
     background-color: #b88e2f;
 }
 
-/*Desarrollamos nuestro catalogo de cursos con grid y flex*/
 
 /*CARDS*/
 
@@ -204,20 +190,12 @@ h2 {
     border: none;
 }
 
-.productos {
-    padding: 10px;
-    height: 300px;
-    width: 300px;
-}
-
 .productoImagen {
     object-fit: contain;
     cursor: pointer;
 }
 
-.productoTitulo {
+h5 {
     font-size: 16px;
     font-weight: bold;
-    text-align: center;
 }
-
