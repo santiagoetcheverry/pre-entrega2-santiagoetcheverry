@@ -116,6 +116,17 @@ a {
 
 /* BANNER */
 
+@media (min-width: 400px) and (max-width: 900px) {
+
+
+    #comprar {
+        flex-direction: column;
+        border: none;
+    }
+
+}
+
+
 .banner {
     background-image: url("../img/Banner.png");
     background-size: cover;
@@ -129,19 +140,18 @@ a {
 .contenedorBanner {
     border-radius: 4px;
     height: 400px;
-    width: 450px;
+    width: 500px;
     margin: 30px;
     padding: 20px;
 
-    left: 53%;
-    top: 15%;
-    position: absolute;
     /* Centrado de forma simple */
-    /* top: 0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto; */
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 10px;
     /******************************/
     /* ctrl + k + u */
     background-color: #fff3e3;
